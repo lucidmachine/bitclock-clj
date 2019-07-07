@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/lucidmachine/bitclock-clj.svg?style=svg)](https://circleci.com/gh/lucidmachine/bitclock-clj)
+
 # bitclock-clj
 
 A [BitClock](https://github.com/lucidmachine/bitclock) CLI frontend and backend written in Clojure.
