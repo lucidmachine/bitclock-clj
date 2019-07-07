@@ -44,4 +44,4 @@ jobs:
       # Build & Store JARs
       - run: lein uberjar
       - store_artifacts:
-          path: target/uberjar
+          path: target/uberjar/*.jar
