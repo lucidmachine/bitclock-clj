@@ -41,7 +41,9 @@ jobs:
       # run tests!
       - run: lein test
 
-      # Build & Store JARs
+      # Build & Store Artifacts
       - run: lein uberjar
+      - run: mkdir -p target/artifacts
+      - run: cp target/uberjar/*.jar target/artifacts
       - store_artifacts:
-          path: target/uberjar/*.jar
+          path: target/artifacts
