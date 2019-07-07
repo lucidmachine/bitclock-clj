@@ -40,7 +40,8 @@ jobs:
 
       # run tests!
       - run: lein test
-      - store_test_results:
-          path: test-results
+
+      # Build & Store JARs
+      - run: lein uberjar
       - store_artifacts:
-          path: target
+          path: target/uberjar
